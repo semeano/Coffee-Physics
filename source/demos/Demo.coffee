@@ -22,7 +22,7 @@ class Demo
 	init: (@container, @renderer = new WebGLRenderer()) ->
 
 		# Build the scene.
-		@setup renderer.gl?
+		@setup @renderer.gl?
 
 		# Give the particles random colours.
 		for particle in @physics.particles
